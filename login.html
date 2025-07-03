@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Plug Zone</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="login-container">
+      <h3 class="text-center mb-4">Login Page</h3>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe" />
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-black w-100"><a href="index.html" style="text-decoration: none ; color : white;">Login</a></button>
+        <div class="text-center mt-3">
+          <a href="#" style="color: black;">Forgot password?</a>
+        </div>
+        <div class="text-center mt-2">
+          <span>Don't have an account? <a href="#" style="color: black;">Register</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+</body>
+</html>

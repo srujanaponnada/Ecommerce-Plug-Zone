@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products | Plug Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="listing.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Plug Zone</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="listing.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+        <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search" />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!-- Product List -->
+  <div class="container my-5" id="product-list">
+    <h2 class="text-center mb-4">All Products</h2>
+    <div class="row">
+
+  
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product.webp" class="card-img-top" alt="Product 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Spectre x360....</h5>
+            <p class="card-text">$49999.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product1')">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product3.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Thinkpad x1 carbon...</h5>
+            <p class="card-text">$59800.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product2')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product7.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Zenbook 14/115/Duo...</h5>
+            <p class="card-text">$59679.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product3')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image3.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ipad 10th gen...</h5>
+            <p class="card-text">$5879.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product4')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image7.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ipad Air 5...</h5>
+            <p class="card-text">$59899.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product5')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img6.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vivo pad 3 pro...</h5>
+            <p class="card-text">$89999.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product6')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="phone1.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Samsung</h5>
+            <p class="card-text">$99999.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product7')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="phone2.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Oneplus...</h5>
+            <p class="card-text">$799999.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product8')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="phone3.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Iphone 15....</h5>
+            <p class="card-text">$99999/p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product9')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="mach1.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Samsung....</h5>
+            <p class="card-text">$5965.89</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product10')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="mach3.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Whirpool</h5>
+            <p class="card-text">$55679.99</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product11')">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="mach4.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Haier..</h5>
+            <p class="card-text">$5976.439</p>
+            <button class="btn btn-primary w-100" onclick="showDetails('product12')">View Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Product Details -->
+  <div class="container my-5 d-none" id="product-details">
+    <button class="btn btn-secondary mb-3" onclick="goBack()">← Back to Products</button>
+    <div id="details-content"></div>
+  </div>
+
+  <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    const productData = {
+  product1: {
+    title: "Spectre x360_premium 2 in 1",
+    price: "$49999.99",
+    description: "Stylish gadget with the latest features and premium quality.",
+    image: "product.webp"
+  },
+  product2: {
+    title: "Thinkpad x1 carbon/14-business",
+    price: "$59800.99",
+    description: "Durable and high-performance gadget for everyday use.",
+    image: "product3.webp"
+  },
+  product3: {
+    title: "Zenbook 14/15/Duo-ultrabook",
+    price: "$59679.99",
+    description: "A sleek design with great performance and user experience.",
+    image: "product7.jpg"
+  },
+  product4: {
+    title: "ipad 10th gen(2022)-10.9-inch display",
+    price: "$5879.99",
+    description: "Affordable product with all essential features included.",
+    image: "image3.jpeg"
+  },
+  product5: {
+    title:"vivo ipad6(2021)-8.3 inch liquid retina",
+    price: "$89999.99",
+    description: "Best-selling item with high customer satisfaction.",
+    image: "image7.webp"
+  },
+  product6: {
+    title: "Ipad pro(2024)",
+    price: "$59899.99",
+    description: "Efficient and budget-friendly choice for daily tasks.",
+    image: "img6.jpeg"
+  },
+  product7: {
+    title: "Phone Model Samsung",
+    price: "$99999.99",
+    description: "Smartphone with excellent camera and battery life.",
+    image: "phone1.jpg"
+  },
+  product8: {
+    title: "Phone Model Oneplus",
+    price: "$799999.99",
+    description: "Fast processor and elegant design. Great value!",
+    image: "phone2.webp"
+  },
+  product9: {
+    title: "Phone Model iphone15pro",
+    price: "$99999.99",
+    description: "Lightweight phone with a vibrant display and solid features.",
+    image: "phone3.webp"
+  },
+  product10: {
+    title: "Samsung",
+    price: "$5965.89",
+    description: "Industrial-grade machine for professional use.",
+    image: "mach1.webp"
+  },
+  product11: {
+    title: "Whirpool",
+    price: "$556799.99",
+    description: "Robust build quality with excellent durability.",
+    image: "mach3.webp"
+  },
+  product12: {
+    title: "Haier",
+    price: "$5976.439",
+    description: "Latest-gen machinery offering top-notch performance.",
+    image: "mach4.webp"
+  }
+};
+
+
+    function showDetails(productId) {
+      const product = productData[productId];
+      const detailsContainer = document.getElementById("details-content");
+      const productList = document.getElementById("product-list");
+      const productDetails = document.getElementById("product-details");
+
+      detailsContainer.innerHTML = `
+        <div class="row">
+          <div class="col-md-6">
+            <img src="${product.image}" alt="${product.title}" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>${product.title}</h2>
+            <p class="lead">${product.price}</p>
+            <p>${product.description}</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      `;
+
+      productList.classList.add("d-none");
+      productDetails.classList.remove("d-none");
+    }
+
+    function goBack() {
+      document.getElementById("product-details").classList.add("d-none");
+      document.getElementById("product-list").classList.remove("d-none");
+    }
+    
+
+  </script>
+
+</body>
+</html>

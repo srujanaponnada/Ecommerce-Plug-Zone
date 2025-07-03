@@ -1,0 +1,32 @@
+body {
+  background-image: url('img3.webp'); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+    
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10%;
+  background-color: grey;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: white;
+}
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.btn-black:hover {
+  background-color: #333;
+  color: #fff;
+}
